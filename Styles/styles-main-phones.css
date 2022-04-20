@@ -1,0 +1,103 @@
+:root{
+    --bg-color-white: #f7f7f7;
+    --bg-color-main-white: #fff;
+    --bg-color-secondary-black: black;
+    --bg-color-main-black: #111010;
+    --transparent: transparent;
+    
+}
+
+@media only screen and (min-width: 800px) {
+    .menu-theme-primary{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .menu-theme-primary{
+        display: none;
+    }
+    .home{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+    .about-us{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+    .contact{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+    .opinions{
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 550;
+    }
+
+  }
+  @media only screen and (max-width: 500px) {
+      :root{
+          --font-color: transparent;
+      }
+    
+.menu-theme-primary{
+    display: block;
+    background-image: url(../images/lista.png);
+    background-color: var(--bg-color-main-white);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 8%;
+    left: 83%;
+    -webkit-box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59); 
+    box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59);
+    transition: all linear .2s;
+}
+.menu-theme-primary:hover{
+    background-color: var(--bg-color-secondary-black);
+    background-image: url(../images/lista-theme-white.png);
+}
+.menu-theme-secondary{
+    display: block;
+    background-color: var(--bg-color-main-black);
+    background-image: url(../images/lista-theme-white.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 8%;
+    left: 83%;
+    -webkit-box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59); 
+    box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59);
+    transition: all linear .2s;
+}
+.menu-theme-secondary:hover{
+   background-image: url(../images/lista.png);
+   background-color: var(--bg-color-main-white);
+}
+
+    .home{
+        color: transparent;
+    }
+    .about-us{
+        color:transparent;
+    }
+    .contact{
+        color: transparent;
+    }
+    .opinions{
+        color: transparent;
+    }
+  }

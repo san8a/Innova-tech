@@ -1,0 +1,192 @@
+:root{
+    --bg-color-white: #f7f7f7;
+    --bg-color-main-white: #fff;
+    --bg-color-secondary-black: black;
+    --bg-color-main-black: #111010;
+}
+body{
+    background-color: var(--bg-color-white);
+    scroll-behavior: smooth;
+}
+
+/*Menu Principal*/
+
+.menu-box{
+    width: 100%;
+    height: 8%;
+    background-color: var(--bg-color-main-white);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: black;
+}
+.home::after{
+    content:"   ";
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.home:hover::after{
+ background-color: #0cdf52;
+}
+
+.about-us{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 39%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: black;
+}
+.about-us::after{
+    content:"   ";
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.about-us:hover::after{
+ background-color: #0cdf52;
+}
+
+.contact{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: black;
+}
+.contact::after{
+    content:"   ";
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.contact:hover::after{
+ background-color: #0cdf52;
+}
+
+.opinions{
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 60%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    z-index: 10;
+    color: black;
+}
+.opinions::after{
+    content:"   ";
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    background-color: transparent;
+    width: 10px ;
+    height: 10px;
+    border-radius: 10000px;
+    z-index: 10;
+    transition: linear .1s all;
+}
+.opinions:hover::after{
+ background-color: #0cdf52;
+}
+
+
+/*Theme mode button*/
+
+.button-theme-primary{
+    background-image: url(../images/moon.png);
+    background-color: var(--bg-color-main-white);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 88%;
+    left: 3%;
+    -webkit-box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59); 
+    box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59);
+    transition: all linear .2s;
+}
+.button-theme-primary:hover{
+    background-color: var(--bg-color-secondary-black);
+    background-image: url(../images/secondary-moon.png);
+}
+.button-theme-secondary{
+    background-color: var(--bg-color-main-black);
+    background-image: url(../images/secondary-moon.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 88%;
+    left: 3%;
+    -webkit-box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59); 
+    box-shadow: 2px 0px 28px -2px rgba(0,0,0,0.59);
+    transition: all linear .2s;
+}
+.button-theme-secondary:hover{
+   background-image: url(../images/moon.png);
+   background-color: var(--bg-color-main-white);
+}
+
+/*logo menu index*/
+
+.logo-main{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/logo-theme-white.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+
+}
